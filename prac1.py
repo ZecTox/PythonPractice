@@ -65,16 +65,14 @@ we can also use split, map or a list comprehension to read in multiple whitespac
 So taking three integers as input and printing their sum is quite simple. On a larger scale(thousands of integers, using stdin and stdout becomes far more imporant for speed)
 '''
 
-import sys
+    # import sys
 
-a,b,c = map(int, input().split())
-print("The sum of these three number is", a+b+c)
+    # a,b,c = map(int, input().split())
+    # print("The sum of these three number is", a+b+c)
 
-# we can also implement the same thing using stdin/stdout
+    # # we can also implement the same thing using stdin/stdout
 
-a, b, c = map(int, sys.stdin.readline().split())
-sys.stdout.write("The sum of these three number is " + str(a+b+c) + "\n")
-
-
+    # a, b, c = map(int, sys.stdin.readline().split())
+    # sys.stdout.write("The sum of these three number is " + str(a+b+c) + "\n")
 
 

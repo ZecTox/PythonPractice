@@ -70,6 +70,10 @@ import sys
 a,b,c = map(int, input().split())
 print("The sum of these three number is", a+b+c)
 
+# we can also implement the same thing using stdin/stdout
+
+a, b, c = map(int, sys.stdin.readline().split())
+sys.stdout.write("The sum of these three number is " + str(a+b+c) + "\n")
 
 
 

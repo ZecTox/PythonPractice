@@ -74,5 +74,16 @@ So taking three integers as input and printing their sum is quite simple. On a l
 
     # a, b, c = map(int, sys.stdin.readline().split())
     # sys.stdout.write("The sum of these three number is " + str(a+b+c) + "\n")
+    
+#Weirds algorith answer, question in usaco
 
+hehe = int(input())
+
+while hehe > 1:
+    print(hehe, end=" ")
+    if hehe % 2 == 0:
+        hehe //= 2
+    else:
+        hehe = (hehe * 3) + 1
+print(hehe)
 

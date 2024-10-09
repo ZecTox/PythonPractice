@@ -77,13 +77,45 @@ So taking three integers as input and printing their sum is quite simple. On a l
     
 #Weirds algorith answer, question in usaco
 
-hehe = int(input())
+    # hehe = int(input())
 
-while hehe > 1:
-    print(hehe, end=" ")
-    if hehe % 2 == 0:
-        hehe //= 2
-    else:
-        hehe = (hehe * 3) + 1
-print(hehe)
+    # while hehe > 1:
+    #     print(hehe, end=" ")
+    #     if hehe % 2 == 0:
+    #         hehe //= 2
+    #     else:
+    #         hehe = (hehe * 3) + 1
+    # print(hehe)
 
+'''
+FILE I/O 
+'''
+
+#Fence painting problem, below is its solution(my logic)
+
+    # a , b = map(int, input().split())
+    # c , d = map(int, input().split())
+
+    # ans1 = []
+    # ans2 = []
+
+    # for i in range(a,b):
+    #     ans1 += [i]
+
+    # for j in range(c,d):
+    #     ans2 += [j]
+
+    # ans = ans1+ans2
+    # ans = set(ans)
+
+    # print(len(ans))
+
+"""
+about whitespaces in python
+"""
+
+print(ans, end=" ") #OK, no newline
+print(ans) #OK, creates newline
+print(str(ans) + "\n", end = " ") #OK, creates newline
+print(str(ans) + " ", end = "") #NOT OK, extra space
+print(str(ans) + "\n") #NOT OK, extra newline

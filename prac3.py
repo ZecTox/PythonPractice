@@ -34,11 +34,11 @@ ITERATING
 
 #we can also use iterators. an iterator allows you to traverse a container by pointing to an object within the container. "iter(arr)" returns an iterator pointing to the first element of the list arr.
 
-arr = [4,2,0,0,5]
-it = iter(arr)
-print(next(it)) #will print 4
-print(next(it)) #will print 2
-print(next(it)) #will print 0
+    # arr = [4,2,0,0,5]
+    # it = iter(arr)
+    # print(next(it)) #will print 4
+    # print(next(it)) #will print 2
+    # print(next(it)) #will print 0
 
 """
 
@@ -74,4 +74,50 @@ INSERTING AND ERASING
 LIST COMPREHENSION
 
 """
+
+    # old_list = [2,5,3,1,6]
+    # new_list = []
+
+    # for i in old_list:
+    #     if i % 2 == 1:
+    #         new_list.append(i*2)
+    # print(new_list)
+    # #simplified with one liner with list comperehension
+    # #recall the form [expression for item in list if conditional]
+    # #expression : i * 2
+    # #list : old_list
+    # #conditional: i % 2 == 1 (only include item i if satisfies the conditional)
+    # new_list = [i*2 for i in old_list if i%2==1] #need to learn to write such small hacks in python
+    # print(new_list) 
+""" what i have written in one liner is called list comprehension and its useful"""
+
+# A very applicable use for of list comprehensions for competitive programming in particular is creating an integer list from space seperated input
+
+    # arr = [int(x) for x in input().split()]
+    # print(arr)
+
+"""
+PAIRS IN PYTHON
+"""
+# if we want to store a collection of points on the 2D plane, then we can use a dynamic array of pairs
+# while python doesnt have a specific class just for pairs, 2-element tuples give nearly the exact functionality. The only issue is that you cant modify the elements since tuples are immutable
+#on the other hand, python has built-in comparison support for tuples. When comparing, it looks at the first element of the pair, then the second, and so on and so forth.
+
+
+    # p1 = (5, "asdf") #this is a tuple and its created using normal brackets
+    # print(p1)
+    # print(p1[0])
+
+    # p2 = (6, "asdf") #this is a tuple and its created using normal brackets
+    # print
+
+""""
+MEMORY ALLOCATION
+"""
+
+#one thing to keep in mind is when using arrays is the memory limit. so if a question has 256mb of memory limit. 
+#1) calculate it in bytes ->  256 * 10^6
+#2) divide by the size, in bytes of an int(4 bytes) or a long lond(in c++) 
+# for example the number of int "S" that is that you are able to store is bounded above by 
+# (256 * 10^6)/4 = 64 * 10^6
 

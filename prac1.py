@@ -114,6 +114,7 @@ FILE I/O
 about whitespaces in python
 """
 
+ans = "Tejas"
 print(ans, end=" ") #OK, no newline
 print(ans) #OK, creates newline
 print(str(ans) + "\n", end = " ") #OK, creates newline
